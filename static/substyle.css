@@ -1,0 +1,156 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #000;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  line-height: 1.4;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 2rem auto;
+}
+
+
+.movie-section {
+  margin-bottom: 2.5rem;
+}
+
+.movie-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Grid of cards */
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 3rem;
+}
+
+/* Individual card */
+.movie-card {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #fff;
+  transition: transform 0.3s;
+}
+
+.movie-card:hover {
+  transform: scale(1.5);
+}
+
+/* Card image */
+.movie-card img {
+  width: 100%;
+  display: block;
+}
+
+/* Badge labels */
+.badge {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  padding: 4px 6px;
+  font-size: 0.75rem;
+  border-radius: 4px;
+  color:#ffcc00;
+  font-weight: bold;
+  background-color: #111;
+}
+
+.badge.new {
+  background: #ffcc00;
+  color: #000;
+}
+
+.badge.imdb {
+  background: #e3b213;
+  color: #000;
+}
+
+/* Title overlay */
+.movie-title {
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+  right: 8px;
+  padding: 4px 6px;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 4px;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  background: #111;
+  padding: 0 1rem;
+  height: 60px;
+}
+
+.logo img {
+  height: 40px;
+}
+
+
+.nav-links {
+  font-family: sans-serif;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  margin-left: 2rem;
+  gap: 0.5rem;
+}
+
+.nav-btn {
+  background: none;
+  border: none;
+  color: #09afec;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.nav-btn:hover {
+  background: var(--btn-hover);
+}
+.nav-items {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  font-size: 1.1rem;
+  color: #09afec;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+.icon-btn:hover {
+  background: #c8cdcd;
+}
+
+.nav-btn logout-btn{
+  background: #09afec;
+  color: #fff;
+  font-weight: bold;
+}

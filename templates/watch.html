@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ movie }} – Watch Now</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='watch.css') }}">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+  <!-- Logo -->
+  <div class="logo">
+    <a href="{{ url_for('home') }}" style="display: flex; align-items: center; gap: 15px; text-decoration: none;">
+      <img src="{{ url_for('static', filename='prime_logo2.png') }}" alt="Prime Video Logo">
+    </a>
+  </div>
+  <!-- Navigation Buttons -->
+    <div class="nav-items">
+    <span class="user">👤 {{ username }}</span>
+    <a href="{{ url_for('logout') }}" class="nav-btn logout-btn">Logout</a>
+  </div>
+</nav>
+
+  <!-- Watch Section -->
+  <div class="watch-section">
+    <h1>🎬 {{ movie }}</h1>
+    <p>Click below to watch your movie:</p>
+    <a href="{{ link }}" target="_blank" class="watch-btn">▶ Watch Now on YouTube</a>
+    <br><br>
+    <a href="/home" class="back-link">⬅ Back to Home</a>
+  </div>
+
+</body>
+</html>

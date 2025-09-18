@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Prime Video Live</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='substyle.css') }}">
+</head>
+
+<body>
+
+  <nav class="navbar">
+  <!-- Logo -->
+    <div class="logo">
+     <a href="{{ url_for('home') }}">
+       <img src="static\prime_logo2.png" alt="Site Logo">
+     </a>
+    </div>
+    <!-- Navigation Links -->
+    <div class="nav-links">
+         <a href="{{ url_for('home') }}" class="nav-btn">Home</a>
+         <a href="{{ url_for('movies_page') }}" class="nav-btn">Movies</a>
+         <a href="{{ url_for('tv_shows') }}" class="nav-btn">TV Shows</a>
+         <a href="{{ url_for('live_tv') }}" class="nav-btn">Live TV</a>
+    </div>
+
+
+
+  <!-- Navigation Buttons -->
+    <div class="nav-items">
+     <span class="user">👤 {{ username }}</span>
+      <a href="{{ url_for('logout') }}" class="nav-btn logout-btn">Logout</a>
+    </div>
+  </nav>
+<!-- Shows section -->
+  <div class="container">
+    <!-- Top movies -->
+    <section class="movie-section">
+      <h2>Popular Channels</h2>
+      <div class="movie-grid">
+        <a href="https://www.primevideo.com/tv" class="movie-card">
+          <img src="https://tse3.mm.bing.net/th/id/OIP.A52b20uanQFIHjFMFztDTAHaD5?pid=Api&P=0&h=180" alt="Colors Hindi">
+        </a>
+        <a href="https://www.primevideo.com/tv" class="movie-card">
+          <img src="https://tse3.mm.bing.net/th/id/OIP.3srvSpkPcTq_lcOBdY4PswHaE8?pid=Api&P=0&h=180" alt="Star Plus">
+        </a>
+        <a href="https://www.primevideo.com/tv" class="movie-card">
+          <img src="https://tse4.mm.bing.net/th/id/OIP.JWiipyJIC6N8pCzSpwB12QHaEv?pid=Api&P=0&h=180" alt="Colors Kannada">
+        </a>
+        <a href="https://www.primevideo.com/tv" class="movie-card">
+          <img src="https://tse4.mm.bing.net/th/id/OIP.U_D5m42qNNaW9WQ0_GCu_gHaEK?pid=Api&P=0&h=180" alt="Nickelodeon">
+        </a>
+      </div>
+    </section>
+    <section class="movie-section">
+      <h2>News & Documentaries</h2>
+      <div class="movie-grid">
+        <a href="https://www.primevideo.com/tv" class="movie-card">
+          <img src="https://tse4.mm.bing.net/th/id/OIP.PXjehRB_SQS3KJqyy9IZggHaEK?pid=Api&P=0&h=180" alt="Republic TV">
+        </a>
+        <a href="https://www.primevideo.com/tv" class="movie-card">
+          <img src="https://tse2.mm.bing.net/th/id/OIP.-Pp-cGyf3RFo3ZEPlX3oTQHaEU?pid=Api&P=0&h=180" alt="Animal Planet">
+        </a>
+        <a href="https://www.primevideo.com/tv" class="movie-card">
+          <img src="https://tse2.mm.bing.net/th/id/OIP.NeLbCOVX5-W2ewNkchnjrgHaE8?pid=Api&P=0&h=180" alt="India Today">
+        </a>
+        <a href="https://www.primevideo.com/tv" class="movie-card">
+          <img src="https://tse4.mm.bing.net/th/id/OIP.c4VC5aZa8QOmqfhsPzs1kAHaEK?pid=Api&P=0&h=180" alt="Discovery">
+        </a>
+      </div>
+    </section>
+  </div>
+
+</body>
+</html>

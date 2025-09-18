@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Prime Video Shows</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='substyle.css') }}">
+</head>
+
+<body>
+
+  <nav class="navbar">
+  <!-- Logo -->
+    <div class="logo">
+     <a href="{{ url_for('home') }}">
+      <img src="static\prime_logo2.png" alt="Site Logo">
+     </a>
+    </div>
+    <!-- Navigation Links -->
+    <div class="nav-links">
+         <a href="{{ url_for('home') }}" class="nav-btn">Home</a>
+         <a href="{{ url_for('movies_page') }}" class="nav-btn">Movies</a>
+         <a href="{{ url_for('tv_shows') }}" class="nav-btn">TV Shows</a>
+         <a href="{{ url_for('live_tv') }}" class="nav-btn">Live TV</a>
+    </div>
+
+
+
+  <!-- Navigation Buttons -->
+    <div class="nav-items">
+     <span class="user">👤 {{ username }}</span>
+      <a href="{{ url_for('logout') }}" class="nav-btn logout-btn">Logout</a>
+    </div>
+  </nav>
+<!-- Shows section -->
+  <div class="container">
+    <!-- Top movies -->
+    <section class="movie-section">
+      <h2>Filmfare OTT Award Winners</h2>
+      <div class="movie-grid">
+        <a href="https://www.primevideo.com/tv" class="movie-card">
+          <img src="https://tse2.mm.bing.net/th/id/OIP.GmeHn7dVZreftzhajTU2cwHaEJ?pid=Api&P=0&h=180" alt="Panchayath">
+        </a>
+        <a href="https://www.primevideo.com/tv" class="movie-card">
+          <img src="https://tse2.mm.bing.net/th/id/OIP.R112PFegTqTbpvHHZ0I5FQHaEK?pid=Api&P=0&h=180" alt="Mirzapur">
+        </a>
+        <a href="https://www.primevideo.com/tv" class="movie-card">
+          <img src="https://tse1.mm.bing.net/th/id/OIP.zpOQw-hMCOHRWTuZAKr3rQHaEK?pid=Api&P=0&h=180" alt="The Family Man">
+        </a>
+        <a href="https://www.primevideo.com/tv" class="movie-card">
+          <img src="https://tse3.mm.bing.net/th/id/OIP.UOjdkhMpOWHxQxu-b16wWwHaEK?pid=Api&P=0&h=180" alt="Mumbai Diaries">
+        </a>
+      </div>
+    </section>
+    <section class="movie-section">
+      <h2>Top 10 TV shows in India</h2>
+      <div class="movie-grid">
+        <a href="https://www.primevideo.com/tv" class="movie-card">
+          <img src="https://tse2.mm.bing.net/th/id/OIP.GmeHn7dVZreftzhajTU2cwHaEJ?pid=Api&P=0&h=180" alt="Panchayath">
+          <span class="badge">1</span>
+        </a>
+        <a href="https://www.primevideo.com/tv" class="movie-card">
+          <img src="https://tse4.mm.bing.net/th/id/OIP.wKgeRjVx9zHkPwRJA28CdAHaEK?pid=Api&P=0&h=180" alt="The Traitors">
+          <span class="badge">2</span>
+        </a>
+        <a href="https://www.primevideo.com/tv" class="movie-card">
+          <img src="https://tse4.mm.bing.net/th/id/OIP.MskGAqa7VOxmhCOEZJoStwHaEK?pid=Api&P=0&h=180" alt="Ballard">
+          <span class="badge">3</span>
+        </a>
+        <a href="https://www.primevideo.com/tv" class="movie-card">
+          <img src="https://tse4.mm.bing.net/th/id/OIP.wH0rCcJJnY-LC1jHW1wU7gHaEV?pid=Api&P=0&h=180" alt="Gram Chikitsalay">
+          <span class="badge">4</span>
+        </a>
+      </div>
+    </section>
+  </div>
+
+</body>
+</html>

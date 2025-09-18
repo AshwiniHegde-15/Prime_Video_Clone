@@ -1,0 +1,225 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: url("netflix-bg.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+}
+
+.user {
+  font-weight: bold;
+}
+
+
+.logout-btn {
+  padding: 8px 15px;
+  background-color: #09afec;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+
+.hero {
+  text-align: center;
+  padding: 100px 20px 40px;
+  background: rgba(0, 0, 0, 0.6);
+  min-height: 100vh;
+}
+
+
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+}
+
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+
+.form-box {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+
+.dropdown {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: none;
+  width: 250px;
+}
+
+
+.btn {
+  padding: 10px 20px;
+  background-color: #09afec;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+.recommendation-section {
+  margin-top: 40px;
+}
+
+
+.movie-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+
+.movie-card {
+  background-color: #222;
+  padding: 15px 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  min-width: 180px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+}
+user {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+
+.navbar {
+  display: flex;
+  align-items: center;
+  background: #111;
+  padding: 0 1rem;
+  height: 60px;
+}
+
+/* Logo */
+.logo img {
+  height: 55px;
+  background-color: #111;
+}
+
+.nav-links {
+  font-family: sans-serif;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  margin-left: 2rem;
+  gap: 0.5rem;
+}
+
+/* Button-style links */
+.nav-btn {
+  background: none;
+  border: none;
+  color: #09afec;
+  padding: 0.5rem 0.75rem;
+  font-size: 1.0rem;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.nav-btn:hover {
+  background: #697477;
+}
+.nav-items {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  font-size: 1.1rem;
+  color: var(--link-color);
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+.icon-btn:hover {
+  background: var(--btn-hover);
+}
+
+.recommendation-section {
+  margin-top: 40px;
+}
+
+
+.movie-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+
+.movie-card {
+  background-color: #1c1c1c;
+  color: #f5f5f5;
+  padding: 20px;
+  border-radius: 12px;
+  font-weight: normal;
+  width: 220px;
+  text-align: left;
+  line-height: 1.5;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 25px rgba(0, 208, 255, 0.999);
+  background-color: #2a2a2a;
+}
+
+.movie-poster{
+  width: 100%;
+  height:280px;
+}
+
+.watch-btn {
+  margin-top: 10px;
+  padding: 8px 14px;
+  background-color: #0998e5;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%;
+}
+
+.watch-btn:hover {
+  background-color: #0998e5;
+}
+
+
+.footer {
+  background-color: #111;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  height: 30px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Prime Video_Movies</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='substyle.css') }}">
+</head>
+
+<body>
+
+  <nav class="navbar">
+  <!-- Logo -->
+    <div class="logo">
+    <a href="{{ url_for('home') }}">
+      <img src="static\prime_logo2.png" alt="Site Logo">
+    </a>
+    </div>
+    <!-- Navigation Links -->
+    <div class="nav-links">
+         <a href="{{ url_for('home') }}" class="nav-btn">Home</a>
+         <a href="{{ url_for('movies_page') }}" class="nav-btn">Movies</a>
+         <a href="{{ url_for('tv_shows') }}" class="nav-btn">TV Shows</a>
+         <a href="{{ url_for('live_tv') }}" class="nav-btn">Live TV</a>
+    </div>
+
+
+
+  <!-- Navigation Buttons -->
+    <div class="nav-items">
+     <span class="user">👤 {{ username }}</span>
+      <a href="{{ url_for('logout') }}" class="nav-btn logout-btn">
+      Logout
+      </a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <!-- Top movies -->
+    <section class="movie-section">
+      <h2>Comedy</h2>
+      <div class="movie-grid">
+        <a href="https://youtu.be/uvVKehm_xSg" class="movie-card">
+          <img src="https://tse2.mm.bing.net/th/id/OIP.x5J-emw4WlgpWvwsTQIfYgHaEK?pid=Api&P=0&h=180" alt="Bhool Bhulaiyaa 2">
+        </a>
+        <a href="https://youtu.be/AKiynoClCaA" class="movie-card">
+          <img src="https://tse4.mm.bing.net/th/id/OIP.9hhFu6LV55JPENv7_J_LaAHaEK?pid=Api&P=0&h=180" alt="Welcome">
+        </a>
+        <a href="https://youtu.be/zloKjQXmwhE" class="movie-card">
+          <img src="https://tse3.mm.bing.net/th/id/OIP.QJ8FoVytUOAHkDhnXFtUbQHaEK?pid=Api&P=0&h=180" alt="Bhagam Bhag">
+        </a>
+        <a href="https://youtu.be/XaXKh-s9zws" class="movie-card">
+          <img src="https://tse2.mm.bing.net/th/id/OIP.SitvffO1SaxJQzLg0clv0QHaEK?pid=Api&P=0&h=180" alt="Golmal 3">
+        </a>
+      </div>
+    </section>
+    <section class="movie-section">
+      <h2>Sci-Fi</h2>
+      <div class="movie-grid">
+        <a href="https://youtu.be/YoHD9XEInc0" class="movie-card">
+          <img src="https://tse1.mm.bing.net/th/id/OIP.asgzvFKYUGe5x_vM49WGxwHaEK?pid=Api&P=0&h=180" alt="Inception">
+        </a>
+        <a href="https://youtu.be/2LqzF5WauAw"  class="movie-card">
+          <img src="https://tse3.mm.bing.net/th/id/OIP.tWCefewNKNKejpR2FwZSBwHaEK?pid=Api&P=0&h=180" alt="Interstellar">
+        </a>
+        <a href="https://youtu.be/eOrNdBpGMv8" class="movie-card">
+          <img src="https://tse1.mm.bing.net/th/id/OIP.a5AjD7peOopu7pQXPOrpyQHaEI?pid=Api&P=0&h=180" alt="Avengers">
+        </a>
+        <a href="https://youtu.be/Mv_b80tKiJk" class="movie-card">
+          <img src="https://tse2.mm.bing.net/th/id/OIP.9N7wRUOI4QQPnnllsqGFvgHaEK?pid=Api&P=0&h=180" alt="Doctor Strange">
+        </a>
+      </div>
+    </section>
+    <section class="movie-section">
+      <h2>Horror and Thrillers</h2>
+      <div class="movie-grid">
+        <a href="https://youtu.be/k10ETZ41q5o" class="movie-card">
+          <img src="https://tse4.mm.bing.net/th/id/OIP.RKFIPA_5yEEqg5gUMTSPzQHaEo?pid=Api&P=0&h=180" alt="The Conjuring">
+        </a>
+        <a href="https://youtu.be/xKJmEC5ieOk"  class="movie-card">
+          <img src="https://tse4.mm.bing.net/th/id/OIP.omSNInixvMu2dKlB83tF0gHaEm?pid=Api&P=0&h=180" alt="IT">
+        </a>
+        <a href="https://youtu.be/YGIcZrUBY0k" class="movie-card">
+          <img src="https://tse4.mm.bing.net/th/id/OIP.5s1QWCjK-iL3pwFwTqRDYQHaEH?pid=Api&P=0&h=180" alt="Tumbadd">
+        </a>
+        <a href="https://youtu.be/pzD9zGcUNrw" class="movie-card">
+          <img src="https://tse1.mm.bing.net/th/id/OIP.I6TX0mJrCBWJoQi26OQHaAHaEK?pid=Api&P=0&h=180" alt="The Nun">
+        </a>
+      </div>
+    </section>
+  </div>
+
+</body>
+</html>
